@@ -1,5 +1,6 @@
 package com.crm.api.core.wechat.entity;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
@@ -13,11 +14,13 @@ import java.util.Date;
 @Setter
 public class ChatroomMember extends Entity implements Createable, Updateable{
 
-    private String  wechatId;
     private String  chatroomId;
+    @SerializedName(value = "wxid", alternate = "wechatId")
     private String  wxid;
+    @SerializedName(value = "nickname", alternate = "nickName")
     private String  nickname;
     private Boolean isIn;
+    @SerializedName(value = "headImgUrl", alternate = "headPic")
     private String  headImgUrl;
     private Date    createTime;
     private Date    updateTime;
@@ -33,9 +36,10 @@ public class ChatroomMember extends Entity implements Createable, Updateable{
 
             if(StringUtils.isNotBlank(this.wxid)
                 && StringUtils.isNotBlank(entity.wxid)
-                && this.wxid.equals(entity.wxid)){
+                && StringUtils.isNotBlank(this.chatroomId)
+                && StringUtils.isNotBlank(entity.chatroomId)){
 
-                return true;
+                return (entity.wxid.equals(this.wxid) && entity.chatroomId.equals(this.chatroomId));
             }
         }
 

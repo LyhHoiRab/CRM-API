@@ -11,6 +11,7 @@ import java.util.Date;
 @Setter
 @Getter
 public class App extends Entity implements Createable, Updateable {
+
     private String  name;
     private String  packageName;
     // true 自定义 false 系统
