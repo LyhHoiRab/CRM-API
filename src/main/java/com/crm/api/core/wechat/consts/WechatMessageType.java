@@ -122,7 +122,10 @@ public enum WechatMessageType{
     WORD_CHANGE("205", "敏感词更新"),
 
     @SerializedName("206")
-    REMARK("207", "修改备注"),
+    REMARK("206", "修改备注"),
+
+    @SerializedName("207")
+    DEVICE_WORD_CHANGE("207", "设备敏感词更新"),
 
     @SerializedName("207")
     PHONE("208", "修改电话号码"),
