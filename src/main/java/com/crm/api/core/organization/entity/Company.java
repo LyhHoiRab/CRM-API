@@ -34,6 +34,8 @@ public class Company extends Entity implements Createable, Updateable{
     private Long sellerTotal;
     //呼叫号码
     private String callNumber;
+    //设备数量
+    private Long deviceTotal;
 
     private List<Department> departments;
 }
