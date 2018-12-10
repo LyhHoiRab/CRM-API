@@ -30,6 +30,7 @@ public class Device extends Entity implements Createable, Updateable{
     private Date         createTime;
     private Date         updateTime;
     private Boolean      setting;
+    private Boolean      backToDesktop;
 
     private List<Groups> groups;
     private User         user;

@@ -140,6 +140,9 @@ public enum WechatMessageType{
     @SerializedName("212")
     DEVICE_SETTING("212", "设备设置开关"),
 
+    @SerializedName("213")
+    DEVICE_BACK_TO_DESKTOP("213", "设备返回桌面设置"),
+
     @SerializedName("999")
     UNKNOWN("999", "未知");
 

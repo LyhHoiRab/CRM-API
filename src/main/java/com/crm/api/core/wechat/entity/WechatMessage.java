@@ -34,6 +34,7 @@ public class WechatMessage extends Entity implements Createable, Updateable{
     private Date                createTime;
     private Date                updateTime;
 
+    private Integer      offset;
     private WechatFriend friend;
     private User         seller;
 }
