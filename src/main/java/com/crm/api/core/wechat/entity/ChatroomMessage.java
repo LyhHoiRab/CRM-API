@@ -35,6 +35,7 @@ public class ChatroomMessage extends Entity implements Createable, Updateable{
     private Date                createTime;
     private Date                updateTime;
 
+    private Long           offset;
     private ChatroomMember member;
     private User           seller;
 }
