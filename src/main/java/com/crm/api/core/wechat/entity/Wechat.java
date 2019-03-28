@@ -27,6 +27,8 @@ public class Wechat extends Entity implements Createable, Updateable{
     private Boolean      isValidate;
     private PurposeType  type;
     private WechatStatus status;
+    //默认图片
+    private String       img;
     //抢红包
     private Boolean      luckyPackage;
     //好友申请通过
