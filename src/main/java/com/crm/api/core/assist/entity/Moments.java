@@ -32,6 +32,7 @@ public class Moments extends Entity implements Createable {
     private Boolean       terminal;
     private String        momentsId;
     private Date          createTime;
+    private Boolean       sendDefaultImg;
 
     private List<String>  wechatIds;
     private Wechat        wechat;
