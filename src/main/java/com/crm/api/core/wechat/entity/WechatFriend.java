@@ -2,6 +2,7 @@ package com.crm.api.core.wechat.entity;
 
 import com.crm.api.core.call.entity.Customer;
 import com.crm.api.core.group.entity.Groups;
+import com.crm.api.core.log.entity.WechatFriendLogger;
 import com.crm.api.core.wechat.consts.AddFromType;
 import com.crm.api.core.wechat.consts.WechatFriendType;
 import lombok.Getter;
@@ -40,10 +41,11 @@ public class WechatFriend extends Entity implements Createable, Updateable{
     private Sex              sex;
     private AddFromType      addFrom;
 
-    private Wechat           wechat;
-    private User             seller;
-    private List<Groups>     groups;
-    private Customer         customer;
+    private Wechat             wechat;
+    private User               seller;
+    private List<Groups>       groups;
+    private Customer           customer;
+    private WechatFriendLogger log;
 
     private Map<String, Object> expandValues;
 
