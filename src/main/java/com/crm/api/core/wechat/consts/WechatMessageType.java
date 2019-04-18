@@ -76,6 +76,9 @@ public enum WechatMessageType{
     @SerializedName("104")
     FRIEND_ADD("104", "主动加好友"),
 
+    @SerializedName("105")
+    FRIEND_REFRESH("105", "刷新好友"),
+
     @SerializedName("111")
     SHOW_PHONE("111", "显示电话开关"),
 
