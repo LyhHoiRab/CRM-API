@@ -46,6 +46,7 @@ public class WechatFriend extends Entity implements Createable, Updateable{
     private List<Groups>       groups;
     private Customer           customer;
     private WechatFriendLogger log;
+    private Date               applyTime;
 
     private Map<String, Object> expandValues;
 
