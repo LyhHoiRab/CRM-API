@@ -40,11 +40,11 @@ public class WechatFriend extends Entity implements Createable, Updateable{
     private Sex              sex;
     private AddFromType      addFrom;
 
-    private Wechat           wechat;
-    private User             seller;
-    private List<Groups>     groups;
-    private Customer         customer;
-    private Date             applyTime;
+    private Wechat             wechat;
+    private User               seller;
+    private List<Groups>       groups;
+    private Customer           customer;
+    private Date               applyTime;
 
     private Map<String, Object> expandValues;
 
