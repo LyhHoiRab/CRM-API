@@ -1,6 +1,7 @@
 package com.crm.api.core.im.entity;
 
 import com.crm.api.core.wechat.consts.WechatMessageType;
+import com.crm.api.core.wechat.entity.WechatFriend;
 import lombok.Getter;
 import lombok.Setter;
 import org.wah.doraemon.domain.Createable;
@@ -31,6 +32,8 @@ public class IMCustomMessage extends Entity implements Createable, Updateable{
     private Boolean           loaded;
     //消息ID
     private String            msgId;
+    //好友信息
+    private WechatFriend      friend;
 
     private Date              createTime;
     private Date              updateTime;
