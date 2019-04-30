@@ -18,4 +18,5 @@ public class WechatFriendLogger extends Entity implements Createable, Updateable
     private WechatMessageType      type;
     private Date                   createTime;
     private Date                   updateTime;
+    private Date                   applyTime;
 }
