@@ -1,5 +1,6 @@
 package com.crm.api.core.statistic.entity;
 
+import com.crm.api.core.wechat.consts.WechatMessageType;
 import lombok.Getter;
 import lombok.Setter;
 import org.wah.doraemon.entity.consts.Sex;
@@ -18,4 +19,6 @@ public class FansIncreaseStatistic{
     private Long male;
     private Long female;
     private Long unknown;
+
+    private WechatMessageType type;
 }
