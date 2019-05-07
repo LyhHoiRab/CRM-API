@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.wah.doraemon.domain.Createable;
 import org.wah.doraemon.domain.Entity;
 import org.wah.doraemon.domain.Updateable;
+import org.wah.doraemon.entity.consts.UsingState;
 
 import java.util.Date;
 import java.util.List;
@@ -13,16 +14,18 @@ import java.util.List;
 @Setter
 public class Company extends Entity implements Createable, Updateable{
 
-    private String name;
-    private String address;
-    private String phone;
+    private String     name;
+    private String     address;
+    private String     phone;
     //营业执照注册号
-    private String licenseNumber;
+    private String     licenseNumber;
     //法定代表人
-    private String legalPerson;
-
-    private Date   createTime;
-    private Date   updateTime;
+    private String     legalPerson;
+    //使用状态
+    private UsingState state;
+    private Date       createTime;
+    private Date       updateTime;
+    private Date       deadline;
 
     //剩余用时长
     private Long totalMins;
